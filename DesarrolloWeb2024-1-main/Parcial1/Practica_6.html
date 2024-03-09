@@ -6,14 +6,42 @@
     <title>Practica_6</title>
 </head>
 <body>
+    <form>
     <h1>Formularios en HTML para registro de cliente</h1>
     <label for="">Nombre del Cliente:</label>
-    <input type="text" name="nombre" placeholder="teclea tu nombre"><br>
-    <label for="">Edad</label>
-    <input type="number" name="edad" placeholder="teclea tu edad">
-    <label for="">Fecha de nacimiento</label><br>
-    <input type="date" name="Fecha de nacimiento" placeholder="coloca tu Fecha">
-    <label for="">escuela</label>
-    <input type="text" name="escuela" placeholder="coloca tu institución">
+    <input type="text" name="nombre" placeholder="teclea tu nombre" value="Fierro Ibarra Eithan Alexander"><br>
+    <label for="">Edad:</label>
+    <input type="number" name="edad" placeholder="teclea tu edad"><br>
+    <label for="">Fecha de nacimiento:</label>
+    <input type="date" name="Fecha de nacimiento" placeholder="coloca tu Fecha"><br>
+    <label for="">institución:</label>
+    <select name="" id="">
+        <option value="">Selecciona tu institución</option>
+        <option value="Cetis107">Cetis107</option>
+        <option value="CBTIS">CBTIS</option>
+        <option value="POBREUAS">UAS</option>
+    </select><br>
+    <label for="color">Color favorito:</label>
+    <input type="color"><br>
+    
+    <label for="">Sexo:</label><br>
+    <input type="radio">Masculino
+    <input type="radio">Femenino
+    <input type="radio">Otro
+    <input type="radio">Helicoptero APACHE <br>
+    
+    <label for="">Hoobie:</label> <br>
+    <input type="checkbox" name="Hoobie">Fornite Rankeds <br>
+    <input type="checkbox" name="Hoobie">War Thunder <small>(Ayuda)</small> <br>
+    <input type="checkbox" name="Hoobie">otro <br>
+    <br>
+    <label for="">comentarios:</label> <br>
+    <textarea name="comentarios" id="" cols="30" rows="10" placeholder="comentarios"></textarea>
+    <br>
+    <label for="">Selecciona la foto:</label><br>
+    <input type="file">
+    <br><br>
+    <input type="submit" value="Guardar Cliente">
+</form>
 </body>
 </html>
