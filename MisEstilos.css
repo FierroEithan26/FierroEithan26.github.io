@@ -1,0 +1,23 @@
+.parrafo{
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    color: darkred;
+    font-size: large;
+    font-weight: 500;
+}
+
+div{
+    border: 2px solid mediumaquamarine;
+    color: darkgoldenrod;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: darkolivegreen;
+    font-size: x-large;
+}
+
+span ul li{
+    color: gainsboro;
+    font-size: large;
+    font-weight: 300;
+}
