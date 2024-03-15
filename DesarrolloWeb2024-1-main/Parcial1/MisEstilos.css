@@ -21,3 +21,26 @@ span ul li{
     font-size: large;
     font-weight: 300;
 }
+
+#Name{
+    background-color: burlywood;
+}
+
+#boton{
+    background-color:darkturquoise;
+    border: none;
+    font-size: medium;
+    width: 40px;
+    height: 50px;
+    color:rgb(6, 49, 6);
+}
+.texto{
+    color:lightcoral;
+}
+.link{
+    color: darkslateblue;
+}
+
+a:hover{
+    color:aquamarine ;
+}
