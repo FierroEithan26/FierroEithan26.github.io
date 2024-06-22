@@ -18,9 +18,51 @@
                 <img src="img/Captura de pantalla (1).png" alt="" id="img" class="img-fluid">
             </div>
             <div class="col">
-                <p>Consulta #1. Obtener listado de cursos(nombre) y las asignaturas que tiene</p>
+                <p>Consulta #2. Obtener listado de cursos(nombre) y las asignaturas que tiene</p>
                 <h3>SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h3>
                 <img src="img/Captura de pantalla (2).png" alt="" id="img" class="img-fluid">
+            </div>
+            <div class="col">
+                <p>Consulta #3. obtener listado(nombre y apellido) de alumnos que tengan beca</p>
+                <h3>SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 FROM alumno WHERE alumno.beca like 'si'</h3>
+                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
+            </div>
+            <div class="col">
+                <p>Consulta #4. obetener liustado de profesores (nombre, apellido) y su numero de contacto</p>
+                <h3>SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof</h3>
+                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
+            </div>
+            <div class="col">
+                <p>Consulta #5. obetenr listado de alumnos (todos los campos) que estann inscritos a la asignatura de programacion</p>
+                <h3>SELECT * FROM alumno INNER JOIN asignatura WHERE asignatura.idAsignatura LIKE 'AS009'</h3>
+                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
+            </div>
+            <div class="col">
+                <p>Consulta #6. obtener listado de profesores y asignaturas que imparten</p>
+                <h3> SELECT profesor.nombre, profesor.apellido1, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura = asignatura.idAsignatura</h3>
+                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
+            </div>
+            <div class="col">
+                <p>Consulta #7. mostrar la asignatura que tiene mas alumnos incristos y su total</p>
+                <h3></h3>
+                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
+            </div>
+            <div class="col">
+                <p>Consulta #8. obtener listado de alumnos que les da clase el profesor con id 
+                    PR048 (jose manuel) sin importar en que aignatura este escrito 
+                </p>
+                <h3></h3>
+                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
+            </div>
+            <div class="col">
+                <p>Consulta #9. obtener el listado de  cursos, con asignatura y el maestro quelas imparte</p>
+                <h3></h3>
+                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
+            </div>
+            <div class="col">
+                <p>Consulta #10.</p>
+                <h3>obtener listado dealumnos, con asignatua que cursa, profesor quela imparte yel curso alque pertenece</h3>
+                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
             </div>
         </div>
     </div>
