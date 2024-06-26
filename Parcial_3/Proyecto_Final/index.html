@@ -56,13 +56,13 @@
             </div>
             <div class="col">
                 <p>Consulta #9. obtener el listado de  cursos, con asignatura y el maestro quelas imparte</p>
-                <h3></h3>
-                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
+                <h3>SELECT curso.nombreDescriptivo AS "curso", asignatura.nombre AS "asignatura", profesor.nombre AS "profesor" FROM curso INNER JOIN asignatura ON asignatura.curso=curso.idCurso INNER JOIN profesor ON asignatura.coordinador=profesor.idProfesor;</h3>
+                <img src="img/Captura de pantalla (9).png" alt="" id="img" class="img-fluid">
             </div>
             <div class="col">
-                <p>Consulta #10.</p>
-                <h3>obtener listado de alumnos, con asignatua que cursa, profesor quela imparte yel curso alque pertenece</h3>
-                <img src="img/Captura de pantalla ().png" alt="" id="img" class="img-fluid">
+                <p>Consulta #10. obtener listado de alumnos, con asignatua que cursa, profesor quela imparte yel curso alque pertenece</p>
+                <h3>SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo FROM alumno INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura INNER JOIN impartir ON impartir.idAsignatura=asignatura.idasignatura INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor INNER JOIN curso ON curso.idCurso=asignatura.curso;</h3>
+                <img src="img/Captura de pantalla (10).png" alt="" id="img" class="img-fluid">
             </div>
         </div>
     </div>
