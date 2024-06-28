@@ -13,56 +13,91 @@
         Eithan A. Fierro Ibarra
         <div class="row">
             <div class="col" id="">
-                <p>Consulta #1. Obtener el listado de todos los alumnos de la facultad</p>
-                <h3>SELECT * FROM alumno</h3>
-                <img src="img/Captura de pantalla (1).png" alt="" id="img" class="img-fluid">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (1).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #1. Obtener el listado de todos los alumnos de la facultad</p>
+                        <h3>SELECT * FROM alumno</h3>
+                    </div>
+                  </div>
             </div>
-            <div class="col">
-                <p>Consulta #2. Obtener listado de cursos(nombre) y las asignaturas que tiene</p>
+            <div class="col" id="">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (2).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #2. Obtener listado de cursos(nombre) y las asignaturas que tiene</p>
                 <h3>SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h3>
-                <img src="img/Captura de pantalla (2).png" alt="" id="img" class="img-fluid">
+                    </div>
+                  </div>
             </div>
-            <div class="col">
-                <p>Consulta #3. obtener listado(nombre y apellido) de alumnos que tengan beca</p>
+            <div class="col" id="">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (3).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #3. obtener listado(nombre y apellido) de alumnos que tengan beca</p>
                 <h3>SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 FROM alumno WHERE alumno.beca like 'si'</h3>
-                <img src="img/Captura de pantalla (3).png" alt="" id="img" class="img-fluid">
+                    </div>
+                  </div>
+
             </div>
-            <div class="col">
-                <p>Consulta #4. obetener liustado de profesores (nombre, apellido) y su numero de contacto</p>
-                <h3>SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof</h3>
-                <img src="img/Captura de pantalla (4).png" alt="" id="img" class="img-fluid">
+            <div class="col" id="">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (4).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #4. obetener liustado de profesores (nombre, apellido) y su numero de contacto</p>
+                        <h3>SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof</h3>
+                    </div>
             </div>
-            <div class="col">
-                <p>Consulta #5. obetenr listado de alumnos (todos los campos) que estann inscritos a la asignatura de programacion</p>
-                <h3>SELECT * FROM alumno INNER JOIN asignatura WHERE asignatura.idAsignatura LIKE 'AS009'</h3>
-                <img src="img/Captura de pantalla (5).png" alt="" id="img" class="img-fluid">
+            <div class="col" id="">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (5).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #5. obetenr listado de alumnos (todos los campos) que estann inscritos a la asignatura de programacion</p>
+                        <h3>SELECT * FROM alumno INNER JOIN asignatura WHERE asignatura.idAsignatura LIKE 'AS009'</h3>
+                        
+                    </div>
             </div>
-            <div class="col">
-                <p>Consulta #6. obtener listado de profesores y asignaturas que imparten</p>
-                <h3> SELECT profesor.nombre, profesor.apellido1, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura = asignatura.idAsignatura</h3>
-                <img src="img/Captura de pantalla (6).png" alt="" id="img" class="img-fluid">
+            <div class="col" id="">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (6).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #6. obtener listado de profesores y asignaturas que imparten</p>
+                        <h3> SELECT profesor.nombre, profesor.apellido1, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura = asignatura.idAsignatura</h3>
+                    </div>
             </div>
-            <div class="col">
-                <p>Consulta #7. mostrar la asignatura que tiene mas alumnos incristos y su total</p>
-                <h3>SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS total FROM asignatura INNER JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura</h3>
-                <img src="img/Captura de pantalla (7).png" alt="" id="img" class="img-fluid">
+            <div class="col" id="">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (7).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #7. mostrar la asignatura que tiene mas alumnos incristos y su total</p>
+                        <h3>SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS total FROM asignatura INNER JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura</h3>
+                    </div>
             </div>
-            <div class="col">
-                <p>Consulta #8. obtener listado de alumnos que les da clase el profesor con id 
-                    PR048 (jose manuel) sin importar en que aignatura este escrito 
-                </p>
-                <h3>SELECT alumno.nombre FROM alumno INNER JOIN impartir WHERE impartir.idProfesor LIKE 'PR048'</h3>
-                <img src="img/Captura de pantalla (8).png" alt="" id="img" class="img-fluid">
+            <div class="col" id="">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (8).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #8. obtener listado de alumnos que les da clase el profesor con id 
+                            PR048 (jose manuel) sin importar en que aignatura este escrito 
+                        </p>
+                        <h3>SELECT alumno.nombre FROM alumno INNER JOIN impartir WHERE impartir.idProfesor LIKE 'PR048'</h3>
+                    </div>
             </div>
-            <div class="col">
-                <p>Consulta #9. obtener el listado de  cursos, con asignatura y el maestro quelas imparte</p>
-                <h3>SELECT curso.nombreDescriptivo AS "curso", asignatura.nombre AS "asignatura", profesor.nombre AS "profesor" FROM curso INNER JOIN asignatura ON asignatura.curso=curso.idCurso INNER JOIN profesor ON asignatura.coordinador=profesor.idProfesor;</h3>
-                <img src="img/Captura de pantalla (9).png" alt="" id="img" class="img-fluid">
+            <div class="col" id="">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (9).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #9. obtener el listado de  cursos, con asignatura y el maestro quelas imparte</p>
+                        <h3>SELECT curso.nombreDescriptivo AS "curso", asignatura.nombre AS "asignatura", profesor.nombre AS "profesor" FROM curso INNER JOIN asignatura ON asignatura.curso=curso.idCurso INNER JOIN profesor ON asignatura.coordinador=profesor.idProfesor;</h3>
+                    </div>
             </div>
-            <div class="col">
-                <p>Consulta #10. obtener listado de alumnos, con asignatua que cursa, profesor quela imparte yel curso alque pertenece</p>
-                <h3>SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo FROM alumno INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura INNER JOIN impartir ON impartir.idAsignatura=asignatura.idasignatura INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor INNER JOIN curso ON curso.idCurso=asignatura.curso;</h3>
-                <img src="img/Captura de pantalla (10).png" alt="" id="img" class="img-fluid">
+            <div class="col" id="">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/Captura de pantalla (10).png" alt="Card image cap">
+                    <div class="card-body">
+                        <p>Consulta #10. obtener listado de alumnos, con asignatua que cursa, profesor quela imparte yel curso alque pertenece</p>
+                        <h3>SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo FROM alumno INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura INNER JOIN impartir ON impartir.idAsignatura=asignatura.idasignatura INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor INNER JOIN curso ON curso.idCurso=asignatura.curso;</h3>
+                    </div>
             </div>
         </div>
     </div>
