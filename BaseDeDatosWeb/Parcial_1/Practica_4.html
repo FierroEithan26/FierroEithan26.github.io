@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <form action="Practica_4.php" method="POST">
+            <div class="row">
+                <h1>Exámen de Alan Uri Lugo Braz</h1><hr>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        1. ¿Como se llama el ALAN URI LUGO BRAZ?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta1" value="ALAN" required> ALAN URI LUGO BRAZ </p>
+                            <p><input type="radio" name="pregunta1" value="lopez" required> alan uri lugo lopez </p>
+                            <p><input type="radio" name="pregunta1" value="ubres" required> alan ubres jugo Brasiel </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4">
+                        <p>
+                            2. <input type="text" name="pregunta2" required> es un estudiante del cetis 107 y es un PENDEJO
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        3. Que juego juega el alan asi como vicio???
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta3[]" value="Valo" > Geilorant (Valorant) </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="WAR THUNDER GOOODD" > WAR THUNDER GOOOOOODDDDD ALV </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="R6" > R6 </p>
+                        </div>
+                    </div>
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
+        </form>
+    </div>
+</body>
+</html>
