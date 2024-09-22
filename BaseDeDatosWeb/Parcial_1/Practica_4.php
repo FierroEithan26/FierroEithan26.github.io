@@ -91,7 +91,7 @@
 
     echo "<h3>7. es el novio MAAAASSS gordo del alan</h3>";
     echo "<h5>Repuesta seleccionada ".$pregunta7." ---- Correcta = leonardo</h5>";
-    if(strtoupper($pregunta7) == "leonardo"){
+    if(strtoupper($pregunta7) == "LEONARDO"){
         $aciertos++;
         echo "<img src='img\correcta.png' width='50px'><hr>";
     }else{
@@ -100,7 +100,7 @@
 
     echo "<h3>8. es lo que se reusa a quitarsela </h3>";
     echo "<h5>Repuesta seleccionada ".$pregunta8." ---- Correcta = la uniseja</h5>";
-    if(strtoupper($pregunta8) == "la uniseja"){
+    if(strtoupper($pregunta8) == "LA UNISEJA"){
         $aciertos++;
         echo "<img src='img\correcta.png' width='50px'><hr>";
     }else{
